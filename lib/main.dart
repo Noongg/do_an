@@ -21,7 +21,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute:Routes.LOGIN_PAGE,
       initialBinding: LoginBinding(),
-      theme: ThemeData.light(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       defaultTransition: Transition.fade,
       getPages: Pages.pages,
     );

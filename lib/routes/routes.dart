@@ -2,6 +2,7 @@
 
 class Routes {
   static const LOGIN_PAGE = "/login";
-  static const REGISTER_PAGE = "/Register";
-  static const HOMEPAGE = "/homepage";
+  static const REGISTER_PAGE = "/register";
+  static const VERIFICATION = "/verification";
+  static const HOME_NAVIGATE = "/home-navigate";
 }

@@ -15,7 +15,7 @@ class Register extends StatelessWidget {
 
   String validateMobile(String? value) {
     String pattern = r'(^(?:[+0]9)?[0-9]{10,12}$)';
-    RegExp regExp = new RegExp(pattern);
+    RegExp regExp = RegExp(pattern);
     if (value!.isEmpty) {
       return 'Please enter mobile number';
     }
@@ -66,7 +66,9 @@ class Register extends StatelessWidget {
                       ],
                     )),
                     const SizedBox(height: 30,),
-                    customButton(text: "Sign Up", callback: (){}),
+                    customButton(text: "Sign Up", callback: (){
+
+                    }),
                     Expanded(child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

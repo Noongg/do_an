@@ -35,7 +35,7 @@ class LoginPage extends StatelessWidget {
                     height: 20,
                   ),
                   textBold(
-                      text: 'Welcome to Lafyuu',
+                      text: 'Welcome to LoKa',
                       color: ColorUtils.colorTitle,
                       fontSize: 16),
                   const SizedBox(
@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget {
                   customButton(
                       text: "Sign In",
                       callback: () {
-                        // Get.to(Verification());
+                        Get.toNamed(Routes.VERIFICATION);
                       }),
                   const SizedBox(
                     height: 20,
@@ -99,6 +99,7 @@ class LoginPage extends StatelessWidget {
                     callback: () {
                       //Get.to(Slide());
                       // Get.to(PickImage());
+                      Get.toNamed(Routes.HOME_NAVIGATE);
                     },
                   ),
                   const SizedBox(
